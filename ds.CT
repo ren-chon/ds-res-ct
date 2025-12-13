@@ -38,8 +38,8 @@ alloc(newmem,2048,"ds.exe"+2A9970F)
 label(return)
 
 newmem:
-  mov eax,140          // Width = 800
-  mov ecx,F0          // Height = 600 (258 hex)
+  mov eax,140          // Width = 320
+  mov ecx,F0          // Height = 240
   mov [r14+10],eax
   mov [r14+14],ecx
   jmp return
@@ -65,8 +65,8 @@ alloc(newmem,2048,"ds.exe"+2A9970F)
 label(return)
 
 newmem:
-  mov eax,190          // Width = 800
-  mov ecx,12C          // Height = 600 (258 hex)
+  mov eax,190          // Width = 400
+  mov ecx,12C          // Height = 300
   mov [r14+10],eax
   mov [r14+14],ecx
   jmp return
@@ -92,8 +92,8 @@ alloc(newmem,2048,"ds.exe"+2A9970F)
 label(return)
 
 newmem:
-  mov eax,280          // Width = 800
-  mov ecx,1E0          // Height = 600 (258 hex)
+  mov eax,280          // Width = 640
+  mov ecx,1E0          // Height = 480
   mov [r14+10],eax
   mov [r14+14],ecx
   jmp return
@@ -119,8 +119,8 @@ alloc(newmem,2048,"ds.exe"+2A9970F)
 label(return)
 
 newmem:
-  mov eax,400          // Width = 800
-  mov ecx,300          // Height = 600 (258 hex)
+  mov eax,400          // Width = 1024
+  mov ecx,300          // Height = 768
   mov [r14+10],eax
   mov [r14+14],ecx
   jmp return
@@ -139,3 +139,4 @@ return:
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>
+
