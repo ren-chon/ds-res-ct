@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="46">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"640x360"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(newmem,2048,"ds.exe"+2DC52CC)
+label(return)
+
+newmem:
+  mov eax,280          // Width = 640
+  mov ecx,168          // Height = 360
+  mov [rsi+10],eax
+  mov [rsi+14],ecx
+  jmp return
+
+"ds.exe"+2DC52CC:
+  jmp newmem
+  nop
+
+return:
+
+[DISABLE]
+"ds.exe"+2DC52CC:
+  db 89 46 10 89 4E 14
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"800x600"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(newmem,2048,"ds.exe"+2DC52CC)
+label(return)
+
+newmem:
+  mov eax,320          // Width = 800
+  mov ecx,258          // Height = 600
+  mov [rsi+10],eax
+  mov [rsi+14],ecx
+  jmp return
+
+"ds.exe"+2DC52CC:
+  jmp newmem
+  nop
+
+return:
+
+[DISABLE]
+"ds.exe"+2DC52CC:
+  db 89 46 10 89 4E 14
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"320x240"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(newmem,2048,"ds.exe"+2DC52CC)
+label(return)
+
+newmem:
+  mov eax,140          // Width = 320
+  mov ecx,F0          // Height = 240
+  mov [rsi+10],eax
+  mov [rsi+14],ecx
+  jmp return
+
+"ds.exe"+2DC52CC:
+  jmp newmem
+  nop
+
+return:
+
+[DISABLE]
+"ds.exe"+2DC52CC:
+  db 89 46 10 89 4E 14
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"1024x600"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(newmem,2048,"ds.exe"+2DC52CC)
+label(return)
+
+newmem:
+  mov eax,400          // Width = 1042
+  mov ecx,258          // Height = 600
+  mov [rsi+10],eax
+  mov [rsi+14],ecx
+  jmp return
+
+"ds.exe"+2DC52CC:
+  jmp newmem
+  nop
+
+return:
+
+[DISABLE]
+"ds.exe"+2DC52CC:
+  db 89 46 10 89 4E 14
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"2560x1440"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(newmem,2048,"ds.exe"+2DC52CC)
+label(return)
+
+newmem:
+  mov eax,A00          // Width = 2560
+  mov ecx,5A0          // Height = 1440
+  mov [rsi+10],eax
+  mov [rsi+14],ecx
+  jmp return
+
+"ds.exe"+2DC52CC:
+  jmp newmem
+  nop
+
+return:
+
+[DISABLE]
+"ds.exe"+2DC52CC:
+  db 89 46 10 89 4E 14
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
